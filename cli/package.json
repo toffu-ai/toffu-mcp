@@ -1,0 +1,17 @@
+{
+  "name": "toffu",
+  "version": "0.1.0",
+  "description": "CLI for Toffu, the AI marketing agent: ad performance, campaign changes, reports and any marketing task from your terminal or your agent.",
+  "type": "module",
+  "bin": { "toffu": "bin/toffu.js" },
+  "files": ["bin", "src", "README.md"],
+  "engines": { "node": ">=20" },
+  "scripts": { "test": "node --test test/" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1"
+  },
+  "repository": { "type": "git", "url": "git+https://github.com/toffu-ai/toffu-mcp.git", "directory": "cli" },
+  "homepage": "https://toffu.ai/agents",
+  "keywords": ["toffu", "marketing", "google-ads", "meta-ads", "mcp", "agent", "cli"],
+  "license": "MIT"
+}
