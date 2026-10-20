@@ -51,13 +51,20 @@ Generic client config (Claude Desktop, Cursor, etc.):
 Toffu also supports OAuth 2.1 + PKCE with Dynamic Client Registration for
 clients that prefer a consent flow.
 
+## CLI
+
+For local agents and terminals: `npx toffu signup`, then `npx toffu ask "<task>"`. See [cli/](cli/README.md).
+
 ## Tools
 
 - `send_message`: delegate any marketing task in plain language
 - `query_campaign_performance`: performance across connected ad platforms
 - `creative_report`: Meta Ads creative performance
 - `propose_change` / `apply_change` / `undo_change`: staged campaign changes
-- `fetch_memory`: search the company's marketing memory
+- `get_account_context`: the owner's rules and connected accounts (call first)
+- `account_health`: Meta opportunity score, pixel quality, catalogs
+- `propose_ab_test`: stage a Meta A/B test
+- `get_task_result`: collect a long `send_message` answer
 
 ## Discovery
 
